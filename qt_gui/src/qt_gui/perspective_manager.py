@@ -443,7 +443,7 @@ class PerspectiveManager(QObject):
             characters = ''
             for i in range(1, value.size(), 2):
                 try:
-                    character = value.at(i)
+                    character = str(value.at(i))
                     # output all non-control characters
                     if character >= ' ' and character <= '~':
                         characters += character
